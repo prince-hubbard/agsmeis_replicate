@@ -1,0 +1,231 @@
+/*
+	CSS VARIABLES
+	--primary-color: #004128;
+*/
+
+
+/* RESETTING SOME USER-AGENT STYLES */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #004128;
+    --light-white: #fff;
+    --yellow-color: rgb(255, 203, 103);
+}
+
+::selection {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+/* UTILITY CLASS */
+
+.container {
+    padding: 0 3em;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1em;
+}
+
+header>nav>div>ul {
+    display: flex;
+}
+
+header>nav>div>ul li {
+    padding: 0 .5em;
+    list-style-type: none;
+}
+
+header>nav>div>ul li a {
+    text-decoration: none;
+    color: var(--light-white);
+}
+
+header>nav>div>ul li:last-child a {
+    background-color: var(--yellow-color);
+    padding: .5em;
+    padding-bottom: .6em;
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+
+header>section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5em;
+}
+
+header>section>div:nth-child(2) img {
+    position: relative;
+    left: 7em;
+    height: 25em;
+}
+
+header>section>div:nth-child(3) {
+    padding-bottom: 3em;
+}
+
+header>section>div:nth-child(3) img {
+    height: 12.5em;
+    width: 100%;
+    padding-left: 7.5em;
+    /*object-fit: cover;*/
+}
+
+header>section>div>h6 {
+    color: var(--yellow-color);
+}
+
+header>section>div>h1 {
+    color: var(--light-white);
+    font-size: 2.5em;
+}
+
+header>section>div>p {
+    color: var(--light-white);
+    font-size: 1.1em;
+    padding: 1em 0;
+}
+
+.btn {
+    background-color: var(--yellow-color);
+    padding: .8em 4em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+header>section>div>div a {
+    background-color: transparent;
+    color: var(--yellow-color);
+    border: 1px solid var(--light-white);
+    padding: .5em 2em;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
+/* MAIN FIRST SECTION */
+
+main section:first-child {
+    background-color: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+main section:first-child div img {
+    width: 400px;
+}
+
+main section:first-child div:last-child {
+    padding-left: 3em;
+}
+
+main section:first-child div:last-child h2 {
+    font-size: 2.5em;
+    padding-bottom: .6em;
+}
+
+main section:first-child div:last-child p {
+    line-height: 1.5em;
+    opacity: .7;
+    padding-bottom: 1.5em;
+}
+
+main section:first-child div:last-child button {}
+
+main section:nth-child(2) {
+    /*display: flex;*/
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat(2, 1fr);
+    /*grid-template-columns: 50% 50%;*/
+    background-color: var(--primary-color);
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+main section:nth-child(2) div h6 {
+    color: var(--yellow-color);
+    text-transform: uppercase;
+}
+
+main section:nth-child(2) div h2 {
+    color: var(--light-white);
+    font-size: 45px;
+}
+
+main section:nth-child(2) .details-container {
+    max-width: 18em;
+}
+
+main section:nth-child(2) .number-circle {
+    background-color: seagreen;
+    padding: 1em;
+    padding-top: .4em;
+    padding-left: .7em;
+    /*padding-bottom: 1em;*/
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    color: #fff;
+}
+
+main section:nth-child(2) .first-para {
+    color: limegreen;
+    padding-top: 7px;
+    padding-bottom: .9em;
+}
+
+main section:nth-child(2) .second-para {
+    color: white;
+}
+
+.lady-smiling-img-container img {
+    width: 95%;
+    height: 100%;
+}
+
+
+/*
+.all-detials{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+	grid-row-gap: 3em;
+	padding-top: 2em;
+}
+*/
+
+.all-detials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.all-detials .details-container {
+    padding-top: 2em;
+    padding-right: 1em;
+    flex-basis: 25%;
+    /*flex-basis: 33.33%;*/
+    /*width: 50%;*/
+    /*background-color: red;*/
+}
